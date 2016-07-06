@@ -1,0 +1,64 @@
+﻿@{
+    ViewBag.Title = "Index2";
+    var studentDetails = ViewBag.Student;
+    var schoolName = TempData.Peek("SchoolName").ToString();
+}
+
+<h2>Index2</h2>
+<h2>Index</h2>
+<fieldset>
+    <div class="display-label">
+        School Name
+    </div>
+    <div class="display-field">
+        @schoolName
+    </div>
+
+    <legend>Student</legend>
+
+
+
+    <div class="display-label">
+        Name
+    </div>
+    <div class="display-field">
+        @studentDetails.Name
+    </div>
+
+    <div class="display-label">
+        Email
+    </div>
+    <div class="display-field">
+        @studentDetails.Email
+    </div>
+
+    <div class="display-label">
+        Class
+    </div>
+    <div class="display-field">
+        @studentDetails.Class
+    </div>
+
+    <div class="display-label">
+        EnrollYear
+    </div>
+    <div class="display-field">
+        @studentDetails.EnrollYear
+    </div>
+
+    <div class="display-label">
+        City
+    </div>
+    <div class="display-field">
+        @studentDetails.City
+    </div>
+
+    <div class="display-label">
+        Country
+    </div>
+    <div class="display-field">
+        @studentDetails.Country
+    </div>
+</fieldset>
+s
+

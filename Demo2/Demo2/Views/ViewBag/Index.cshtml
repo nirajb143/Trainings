@@ -1,0 +1,53 @@
+﻿@{
+    ViewBag.Title = "Index";
+    var studentDetails = ViewData["StudentDetails"] as Demo2.Models.StudentDTO;
+}
+
+<h2>Index</h2><fieldset>
+    <legend>Student</legend>
+
+    <div class="display-label">
+        Name
+    </div>
+    <div class="display-field">
+        @studentDetails.Name
+    </div>
+
+    <div class="display-label">
+        Email
+    </div>
+    <div class="display-field">
+        @studentDetails.Email
+    </div>
+
+    <div class="display-label">
+        Class
+    </div>
+    <div class="display-field">
+        @studentDetails.Class
+    </div>
+
+    <div class="display-label">
+        EnrollYear
+    </div>
+    <div class="display-field">
+        @studentDetails.EnrollYear
+    </div>
+
+    <div class="display-label">
+        City
+    </div>
+    <div class="display-field">
+        @studentDetails.City
+    </div>
+
+    <div class="display-label">
+        Country
+    </div>
+    <div class="display-field">
+        @studentDetails.Country
+    </div>
+</fieldset>
+
+
+          
