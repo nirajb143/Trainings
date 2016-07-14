@@ -184,6 +184,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ActionResultDemoController.cs" />
     <Compile Include="Controllers\EmployeeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\StudentController.cs" />
@@ -351,6 +352,8 @@
     <Content Include="Views\Student\Delete.cshtml" />
     <Content Include="Views\ViewBag\Index.cshtml" />
     <Content Include="Views\ViewBag\Index2.cshtml" />
+    <Content Include="Views\ActionResultDemo\Index.cshtml" />
+    <Content Include="Views\ActionResultDemo\IndexWithModel.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

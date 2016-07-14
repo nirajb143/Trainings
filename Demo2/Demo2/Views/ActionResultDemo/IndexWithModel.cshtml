@@ -1,0 +1,65 @@
+﻿@model Demo2.Models.StudentDTO
+
+@{
+    ViewBag.Title = "IndexWithModel";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>IndexWithModel</h2>
+
+<fieldset>
+    <legend>StudentDTO</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.StudentID)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.StudentID)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Email)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Email)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Class)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Class)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.EnrollYear)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.EnrollYear)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.City)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.City)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Country)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Country)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
